@@ -34,9 +34,9 @@ const captions = [
     </header>
     <main class="max-w-[1440px] mx-auto">
       <h1 class="sr-only">把课本漫画，做成视频</h1>
-      <div aria-label="第三个项目的 12 张作品图片，按页码顺序展示">
+      <div class="flex flex-col" aria-label="第三个项目的 12 张作品图片，按 1 至 12 顺序从上到下竖向排列">
         {captions.map((caption, index) => (
-          <figure class="m-0">
+          <figure class="m-0 w-full">
             <a
               href={`${base}projects/project-03/${index + 1}.png`}
               target="_blank"

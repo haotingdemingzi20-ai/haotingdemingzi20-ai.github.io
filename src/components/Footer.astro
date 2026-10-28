@@ -18,7 +18,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
         <p class="text-base text-gray-600">
           {siteConfig.title}
         </p>
-        <div class="flex flex-col gap-2 text-sm text-gray-600">
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-600">
           <a href={`tel:${siteConfig.social.phone}`} class="hover:text-gray-800">
             电话：{siteConfig.social.phone}
           </a>
@@ -28,35 +28,10 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
         </div>
         <div class="flex gap-x-6">
           <a
-            href={`mailto:${siteConfig.social.email}`}
-            aria-label="Email"
-            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
-            style={`--accent-color: ${siteConfig.accentColor}`}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="h-6 w-6"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
-              ></path>
-              <path d="M3 7l9 6l9 -6"></path>
-            </svg>
-          </a>
-          <a
             href={siteConfig.social.github}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub"
+            aria-label="GitHub 个人主页"
             class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
             style={`--accent-color: ${siteConfig.accentColor}`}
           >
@@ -84,7 +59,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
           <a
             href="#about"
             class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
-            >About</a
+            >关于我</a
           >
           {
             hasProjects && (
@@ -92,7 +67,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                 href="#projects"
                 class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
               >
-                Projects
+                作品项目
               </a>
             )
           }
@@ -112,14 +87,14 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                 href="#education"
                 class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
               >
-                Education
+                教育背景
               </a>
             )
           }
         </nav>
         <p class="text-sm text-gray-500">
           © {new Date().getFullYear()}
-          {siteConfig.name}. All rights reserved.
+          {siteConfig.name}. 保留所有权利。
         </p>
       </div>
     </div>

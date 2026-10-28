@@ -26,7 +26,7 @@ export const siteConfig = {
     },
     {
       name: "把课本漫画，做成视频",
-      description: "全品漫画剧制作 × 大葱菜菜 IP 运营",
+      description: "全品漫画剧制作 × 大葱菜菜 角色运营",
       link: "projects/project-03/",
       cover: "projects/project-03/1.png",
       skills: [],
@@ -41,7 +41,7 @@ export const siteConfig = {
     },
     {
       company: "武汉智帧未来传媒有限公司",
-      title: "视觉设计师 · AI漫剧制作",
+      title: "视觉设计师 · 人工智能漫剧制作",
       dateRange: "2025.12 - 2026.03",
       bullets: ["1", "1"],
     },

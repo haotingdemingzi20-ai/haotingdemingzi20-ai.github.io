@@ -4,7 +4,8 @@ export const siteConfig = {
   description: "梅尔西耶的个人作品集网站",
   accentColor: "#1d4ed8",
   social: {
-    email: "your-email@example.com",
+    email: "18164022565@163.com",
+    phone: "18164022565",
     linkedin: "https://linkedin.com/in/yourprofile",
     twitter: "https://x.com/rfitzio",
     github: "https://github.com/haotingdemingzi20-ai",
@@ -69,24 +70,10 @@ export const siteConfig = {
   ],
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
-      achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
-      ],
-    },
-    {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
-      ],
+      school: "湖北工业大学",
+      degree: "设计专业",
+      dateRange: "2024 - 至今",
+      achievements: [],
     },
   ],
 };

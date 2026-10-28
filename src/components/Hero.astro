@@ -151,8 +151,19 @@ import { siteConfig } from "../config";
     </div>
   </div>
   <div
-    class="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-24 flex gap-x-4 sm:gap-x-6 md:gap-x-8 text-gray-700 animate-fade-in animation-delay-600"
+    class="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-24 flex flex-wrap items-center gap-y-3 gap-x-4 sm:gap-x-6 md:gap-x-8 text-gray-700 animate-fade-in animation-delay-600"
   >
+    {
+      siteConfig.social?.phone && (
+        <a
+          href={`tel:${siteConfig.social.phone}`}
+          aria-label={`电话 ${siteConfig.social.phone}`}
+          class="transition-colors duration-300 hover:text-[var(--accent-color)]"
+        >
+          电话：{siteConfig.social.phone}
+        </a>
+      )
+    }
     {
       siteConfig.social?.email && (
         <a

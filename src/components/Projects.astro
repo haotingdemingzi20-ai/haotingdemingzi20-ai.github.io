@@ -24,8 +24,8 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                 const Component = project.link ? "a" : "div";
                 const linkProps = project.link
                   ? {
-                      href: project.link,
-                      target: "_blank",
+                      href: project.link.startsWith("http") ? project.link : `${import.meta.env.BASE_URL}${project.link}`,
+                      target: project.link.startsWith("http") ? "_blank" : undefined,
                       rel: "noopener noreferrer",
                     }
                   : {};
@@ -58,6 +58,17 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                         </div>
                       )}
 
+                      {"cover" in project && project.cover && (
+                        <img
+                          src={`${import.meta.env.BASE_URL}${project.cover}`}
+                          alt={project.name}
+                          width="1920"
+                          height="1080"
+                          loading="lazy"
+                          decoding="async"
+                          class="w-full h-auto rounded-lg mb-6"
+                        />
+                      )}
                       <div class="space-y-4">
                         <div>
                           <span

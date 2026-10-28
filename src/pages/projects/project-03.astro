@@ -1,0 +1,67 @@
+---
+import { siteConfig } from "../../config";
+import "../../styles/global.css";
+const base = import.meta.env.BASE_URL;
+const captions = [
+  "把课本漫画，做成视频",
+  "项目背景",
+  "核心矛盾",
+  "人物速写",
+  "制作过程",
+  "决策逻辑",
+  "漫画改编",
+  "分镜设计",
+  "提示词规范",
+  "镜头剪辑、配音与字幕",
+  "IP 运营",
+  "账号成果",
+];
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="全品漫画剧制作与大葱菜菜 IP 运营项目，按顺序展示完整的 12 页作品提案。" />
+    <title>把课本漫画，做成视频 · {siteConfig.name}</title>
+  </head>
+  <body class="bg-[#101112] text-white">
+    <header class="border-b border-white/10">
+      <div class="max-w-[1440px] mx-auto px-5 sm:px-8 py-5 flex items-center justify-between gap-4">
+        <a href={`${base}#projects`} class="text-sm text-gray-300 hover:text-white focus-visible:outline-2 focus-visible:outline-orange-500">← 返回作品集</a>
+        <span class="text-sm text-gray-400">梅尔西耶 · PROJECT 03</span>
+      </div>
+    </header>
+    <main class="max-w-[1440px] mx-auto">
+      <h1 class="sr-only">把课本漫画，做成视频</h1>
+      <div aria-label="第三个项目的 12 张作品图片，按页码顺序展示">
+        {captions.map((caption, index) => (
+          <figure class="m-0">
+            <a
+              href={`${base}projects/project-03/${index + 1}.png`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`查看第 ${index + 1} 页原图：${caption}`}
+              class="block focus-visible:outline-2 focus-visible:outline-orange-500 focus-visible:outline-offset-[-2px]"
+            >
+              <img
+                src={`${base}projects/project-03/${index + 1}.png`}
+                alt={`第 ${index + 1} 页：${caption}`}
+                width="1920"
+                height="1080"
+                loading={index === 0 ? "eager" : "lazy"}
+                decoding="async"
+                class="block w-full h-auto"
+              />
+            </a>
+            <figcaption class="sr-only">{index + 1} / 12 · {caption}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </main>
+    <footer class="text-center px-5 py-10 border-t border-white/10">
+      <p class="text-gray-400 text-sm mb-5">03 · 把课本漫画，做成视频 · 共 12 页</p>
+      <a href={`${base}#projects`} class="inline-block rounded-full border border-white/30 px-6 py-3 text-sm hover:bg-white hover:text-black">返回作品集</a>
+    </footer>
+  </body>
+</html>

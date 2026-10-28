@@ -27,9 +27,10 @@ export const siteConfig = {
       skills: [],
     },
     {
-      name: "项目三",
-      description: "作品内容待补充",
-      link: "",
+      name: "把课本漫画，做成视频",
+      description: "全品漫画剧制作 × 大葱菜菜 IP 运营",
+      link: "projects/project-03/",
+      cover: "projects/project-03/1.png",
       skills: [],
     },
   ],

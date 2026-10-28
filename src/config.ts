@@ -38,34 +38,16 @@ export const siteConfig = {
   ],
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
-      bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
-      ],
+      company: "全品教育",
+      title: "视觉设计师 · 制作部门 · 课本剧制作",
+      dateRange: "2026.06 - 2026.09",
+      bullets: ["1", "1"],
     },
     {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
-      bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
-      ],
-    },
-    {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
-      bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
-      ],
+      company: "武汉智帧未来传媒有限公司",
+      title: "视觉设计师 · AI漫剧制作",
+      dateRange: "2025.12 - 2026.03",
+      bullets: ["1", "1"],
     },
   ],
   education: [

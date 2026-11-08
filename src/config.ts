@@ -13,9 +13,10 @@ export const siteConfig = {
   skills: ["Figma", "Photoshop", "ChatGPT", "Codex", "SD", "ComfyUI"],
   projects: [
     {
-      name: "项目一",
-      description: "作品内容待补充",
-      link: "",
+      name: "全品《漫画学课本》视频化改编与 IP 内容延展",
+      description: "2026 年全品暑期实习项目，涵盖漫画改编、分镜设计、视频制作与科普内容运营。",
+      link: "projects/project-01/",
+      cover: "projects/project-01/1.png",
       skills: [],
     },
     {
@@ -25,10 +26,9 @@ export const siteConfig = {
       skills: [],
     },
     {
-      name: "把课本漫画，做成视频",
-      description: "全品漫画剧制作 × 大葱菜菜 角色运营",
-      link: "projects/project-03/",
-      cover: "projects/project-03/1.png",
+      name: "项目三",
+      description: "作品内容待补充",
+      link: "",
       skills: [],
     },
   ],

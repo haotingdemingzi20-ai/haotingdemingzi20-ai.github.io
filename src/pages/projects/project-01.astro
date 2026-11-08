@@ -3,18 +3,18 @@ import { siteConfig } from "../../config";
 import "../../styles/global.css";
 const base = import.meta.env.BASE_URL;
 const captions = [
-  "把课本漫画，做成视频",
+  "封面",
   "项目背景",
-  "核心矛盾",
-  "人物速写",
-  "制作过程",
-  "决策逻辑",
+  "我的工作与制作流程",
   "漫画改编",
+  "角色参考与镜头制作",
   "分镜设计",
-  "提示词规范",
-  "镜头剪辑、配音与字幕",
-  "角色运营",
-  "账号成果",
+  "分镜画面展示",
+  "分镜画面修正",
+  "后期剪辑与成片",
+  "角色内容运营",
+  "项目账号展示",
+  "实习总结",
 ];
 ---
 <!doctype html>
@@ -22,30 +22,30 @@ const captions = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="全品漫画剧制作与大葱菜菜 角色运营项目，按顺序展示完整的 12 页作品提案。" />
-    <title>把课本漫画，做成视频 · {siteConfig.name}</title>
+    <meta name="description" content="2026 年全品暑期实习项目，涵盖漫画改编、分镜设计、视频制作与科普内容运营。" />
+    <title>全品《漫画学课本》视频化改编与 IP 内容延展 · {siteConfig.name}</title>
   </head>
   <body class="bg-[#101112] text-white">
     <header class="border-b border-white/10">
       <div class="max-w-[1440px] mx-auto px-5 sm:px-8 py-5 flex items-center justify-between gap-4">
         <a href={`${base}#projects`} class="text-sm text-gray-300 hover:text-white focus-visible:outline-2 focus-visible:outline-orange-500">← 返回作品集</a>
-        <span class="text-sm text-gray-400">梅尔西耶 · 作品三</span>
+        <span class="text-sm text-gray-400">{siteConfig.name} · 作品一</span>
       </div>
     </header>
     <main class="max-w-[1440px] mx-auto">
-      <h1 class="sr-only">把课本漫画，做成视频</h1>
-      <div class="flex flex-col" aria-label="第三个项目的 12 张作品图片，按 1 至 12 顺序从上到下竖向排列">
+      <h1 class="sr-only">全品《漫画学课本》视频化改编与 IP 内容延展</h1>
+      <div class="flex flex-col" aria-label="第一个项目的 12 张作品图片，按 1 至 12 顺序从上到下竖向排列">
         {captions.map((caption, index) => (
           <figure class="m-0 w-full">
             <a
-              href={`${base}projects/project-03/${index + 1}.png`}
+              href={`${base}projects/project-01/${index + 1}.png`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`查看第 ${index + 1} 页原图：${caption}`}
               class="block focus-visible:outline-2 focus-visible:outline-orange-500 focus-visible:outline-offset-[-2px]"
             >
               <img
-                src={`${base}projects/project-03/${index + 1}.png`}
+                src={`${base}projects/project-01/${index + 1}.png`}
                 alt={`第 ${index + 1} 页：${caption}`}
                 width="1920"
                 height="1080"
@@ -60,7 +60,7 @@ const captions = [
       </div>
     </main>
     <footer class="text-center px-5 py-10 border-t border-white/10">
-      <p class="text-gray-400 text-sm mb-5">03 · 把课本漫画，做成视频 · 共 12 页</p>
+      <p class="text-gray-400 text-sm mb-5">01 · 全品《漫画学课本》视频化改编与 IP 内容延展 · 共 12 页</p>
       <a href={`${base}#projects`} class="inline-block rounded-full border border-white/30 px-6 py-3 text-sm hover:bg-white hover:text-black">返回作品集</a>
     </footer>
   </body>

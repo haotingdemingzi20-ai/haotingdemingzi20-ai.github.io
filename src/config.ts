@@ -10,8 +10,17 @@ export const siteConfig = {
     github: "https://github.com/haotingdemingzi20-ai",
   },
   aboutMe:
-    "你好，我是梅尔西耶，一名设计专业学生。我的创作工具包括 Figma、Photoshop、ChatGPT、Codex、SD 和 ComfyUI。",
-  skills: ["Figma", "Photoshop", "ChatGPT", "Codex", "SD", "ComfyUI"],
+    "你好，我是梅尔西耶，一名设计专业学生。我的创作工具包括 Figma、Photoshop、ChatGPT、Codex、SD、ComfyUI、Illustrator 和剪映。",
+  skills: [
+    { name: "Figma", icon: "skills/figma.jpg" },
+    { name: "Photoshop", icon: "skills/photoshop.jpg" },
+    { name: "ChatGPT", icon: "skills/chatgpt.jpg" },
+    { name: "Codex", icon: "skills/codex.svg" },
+    { name: "Stable Diffusion（SD）", icon: "skills/stable-diffusion.svg" },
+    { name: "ComfyUI", icon: "skills/comfyui.png" },
+    { name: "Illustrator", icon: "skills/illustrator.jpg" },
+    { name: "剪映", icon: "skills/jianying.jpg" },
+  ],
   projects: [
     {
       name: "全品《漫画学课本》视频化改编与 IP 内容延展",

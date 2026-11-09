@@ -1,0 +1,45 @@
+---
+import ProjectGallery from "../../components/ProjectGallery.astro";
+
+const slides = [
+  { file: "1.png", caption: "品牌数字人设计主视觉" },
+  { file: "2.png", caption: "品牌数字人的设计目标" },
+  { file: "3.png", caption: "从品牌气质到人物形象" },
+  { file: "4.png", caption: "林知蔓人物档案" },
+  { file: "5.png", caption: "数字人形象迭代" },
+  { file: "6.png", caption: "多模型对照", width: 1942, height: 1085 },
+  { file: "7.png", caption: "数字人 LoRA 训练" },
+  { file: "8.png", caption: "数字人训练数据集" },
+  { file: "9.png", caption: "ComfyUI 工作流：产品融合、换装与场景" },
+  { file: "10.png", caption: "ComfyUI 工作流：质感优化、多角度与光影" },
+  { file: "11.png", caption: "直播间视觉搭建" },
+  { file: "12.png", caption: "直播间应用展示" },
+  { file: "13.png", caption: "电商海报制作过程" },
+  { file: "14.png", caption: "三款茶饮海报展示" },
+  { file: "15.png", caption: "数字人海报与换装展示" },
+  { file: "16.png", caption: "数字人跨品类展示" },
+  { file: "17.png", caption: "三伏限定活动主视觉", width: 3060, height: 1722 },
+  { file: "18.png", caption: "伏小饮项目介绍" },
+  { file: "19.png", caption: "活动前期分析" },
+  { file: "20.png", caption: "品牌 IP 伏小芽" },
+  { file: "21.png", caption: "伏小芽二维与三维视图" },
+  { file: "22.png", caption: "伏小芽日常表情" },
+  { file: "23.png", caption: "三款口味换装设计" },
+  { file: "24.png", caption: "三味茶饮礼盒设计" },
+  { file: "25.png", caption: "品牌电商 H5 长图" },
+  { file: "26.png", caption: "伏小芽礼盒与周边" },
+  { file: "27.png", caption: "三款伏小芽公仔包装" },
+  { file: "28.png", caption: "桌边试喝短片封面" },
+  { file: "29.png", caption: "短片人物、场景与产品" },
+  { file: "30.png", caption: "短片制作分镜" },
+];
+---
+
+<ProjectGallery
+  title="伏小饮AIGC设计"
+  description="品牌数字人、IP 形象与 AIGC 视觉设计，涵盖 LoRA 训练、电商海报、直播间及短片分镜。"
+  label="作品二"
+  number="02"
+  imageDirectory="projects/project-02/"
+  slides={slides}
+/>

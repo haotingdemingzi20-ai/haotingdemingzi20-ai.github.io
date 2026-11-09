@@ -28,9 +28,10 @@ export const siteConfig = {
       skills: [],
     },
     {
-      name: "项目二",
-      description: "作品内容待补充",
-      link: "",
+      name: "伏小饮AIGC设计",
+      description: "品牌数字人、IP 形象与 AIGC 视觉设计，涵盖 LoRA 训练、电商海报、直播间及短片分镜。",
+      link: "projects/project-02/",
+      cover: "projects/project-02/1.png",
       skills: [],
     },
     {

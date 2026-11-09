@@ -8,7 +8,7 @@ interface Props {
   label: string;
   number: string;
   imageDirectory: string;
-  slides: { file: string; caption: string }[];
+  slides: { file: string; caption: string; width?: number; height?: number }[];
 }
 
 const { title, description, label, number, imageDirectory, slides } = Astro.props;
@@ -32,7 +32,7 @@ const base = import.meta.env.BASE_URL;
     <main class="max-w-[1440px] mx-auto">
       <h1 class="sr-only">{title}</h1>
       <div class="flex flex-col gap-4 sm:gap-6 lg:gap-8" aria-label={`${label}的 ${slides.length} 张作品图片，按顺序从上到下竖向排列`}>
-        {slides.map(({ file, caption }, index) => (
+        {slides.map(({ file, caption, width = 1920, height = 1080 }, index) => (
           <figure class="m-0 w-full">
             <a
               href={`${base}${imageDirectory}${file}`}
@@ -44,8 +44,8 @@ const base = import.meta.env.BASE_URL;
               <img
                 src={`${base}${imageDirectory}${file}`}
                 alt={`第 ${index + 1} 页：${caption}`}
-                width="1920"
-                height="1080"
+                width={width}
+                height={height}
                 loading={index === 0 ? "eager" : "lazy"}
                 decoding="async"
                 class="block w-full h-auto"

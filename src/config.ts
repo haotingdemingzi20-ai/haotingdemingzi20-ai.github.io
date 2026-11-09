@@ -40,6 +40,12 @@ export const siteConfig = {
       cover: "projects/project-03/shanhao/01.png",
       skills: [],
     },
+    {
+      name: "项目四",
+      description: "作品内容待补充",
+      link: "",
+      skills: [],
+    },
   ],
   experience: [
     {

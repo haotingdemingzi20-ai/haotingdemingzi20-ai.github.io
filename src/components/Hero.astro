@@ -175,6 +175,18 @@ import { siteConfig } from "../config";
         </a>
       )
     }
+    {
+      siteConfig.social?.github && (
+        <a
+          href={siteConfig.social.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="break-all transition-colors duration-300 hover:text-[var(--accent-color)]"
+        >
+          GitHub：{new URL(siteConfig.social.github).pathname.slice(1)}
+        </a>
+      )
+    }
   </div>
 </div>
 

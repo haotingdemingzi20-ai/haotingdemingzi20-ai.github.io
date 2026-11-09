@@ -16,10 +16,7 @@ export const siteConfig = {
     { name: "Photoshop", icon: "skills/photoshop.jpg" },
     { name: "Illustrator", icon: "skills/illustrator.jpg" },
     { name: "ChatGPT", icon: "skills/chatgpt.jpg" },
-    { name: "Codex", icon: "skills/codex.svg" },
     { name: "LibTV", icon: "skills/libtv.png" },
-    { name: "Stable Diffusion（SD）", icon: "skills/stable-diffusion.svg" },
-    { name: "即梦", icon: "skills/jimeng.jpg" },
     { name: "剪映", icon: "skills/jianying.jpg" },
   ],
   projects: [

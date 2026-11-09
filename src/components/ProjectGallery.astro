@@ -1,0 +1,64 @@
+---
+import { siteConfig } from "../config";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  label: string;
+  number: string;
+  imageDirectory: string;
+  slides: { file: string; caption: string }[];
+}
+
+const { title, description, label, number, imageDirectory, slides } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title} · {siteConfig.name}</title>
+  </head>
+  <body class="bg-[#101112] text-white">
+    <header class="border-b border-white/10">
+      <div class="max-w-[1440px] mx-auto px-5 sm:px-8 py-5 flex items-center justify-between gap-4">
+        <a href={`${base}#projects`} class="text-sm text-gray-300 hover:text-white focus-visible:outline-2 focus-visible:outline-orange-500">← 返回作品集</a>
+        <span class="text-sm text-gray-400">{siteConfig.name} · {label}</span>
+      </div>
+    </header>
+    <main class="max-w-[1440px] mx-auto">
+      <h1 class="sr-only">{title}</h1>
+      <div class="flex flex-col" aria-label={`${label}的 ${slides.length} 张作品图片，按顺序从上到下竖向排列`}>
+        {slides.map(({ file, caption }, index) => (
+          <figure class="m-0 w-full">
+            <a
+              href={`${base}${imageDirectory}${file}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`查看第 ${index + 1} 页原图：${caption}`}
+              class="block focus-visible:outline-2 focus-visible:outline-orange-500 focus-visible:outline-offset-[-2px]"
+            >
+              <img
+                src={`${base}${imageDirectory}${file}`}
+                alt={`第 ${index + 1} 页：${caption}`}
+                width="1920"
+                height="1080"
+                loading={index === 0 ? "eager" : "lazy"}
+                decoding="async"
+                class="block w-full h-auto"
+              />
+            </a>
+            <figcaption class="sr-only">{index + 1} / {slides.length} · {caption}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </main>
+    <footer class="text-center px-5 py-10 border-t border-white/10">
+      <p class="text-gray-400 text-sm mb-5">{number} · {title} · 共 {slides.length} 页</p>
+      <a href={`${base}#projects`} class="inline-block rounded-full border border-white/30 px-6 py-3 text-sm hover:bg-white hover:text-black">返回作品集</a>
+    </footer>
+  </body>
+</html>

@@ -10,15 +10,16 @@ export const siteConfig = {
     github: "https://github.com/haotingdemingzi20-ai",
   },
   aboutMe:
-    "你好，我是梅尔西耶，一名设计专业学生。我的创作工具包括 Figma、Photoshop、ChatGPT、Codex、SD、ComfyUI、Illustrator 和剪映。",
+    "你好，我是梅尔西耶，一名设计专业学生。我的创作工具包括 Figma、Photoshop、Illustrator、ChatGPT、Codex、LibTV、SD、ComfyUI、即梦和剪映。",
   skills: [
     { name: "Figma", icon: "skills/figma.jpg" },
     { name: "Photoshop", icon: "skills/photoshop.jpg" },
+    { name: "Illustrator", icon: "skills/illustrator.jpg" },
     { name: "ChatGPT", icon: "skills/chatgpt.jpg" },
     { name: "Codex", icon: "skills/codex.svg" },
+    { name: "LibTV", icon: "skills/libtv.png" },
     { name: "Stable Diffusion（SD）", icon: "skills/stable-diffusion.svg" },
-    { name: "ComfyUI", icon: "skills/comfyui.png" },
-    { name: "Illustrator", icon: "skills/illustrator.jpg" },
+    { name: "即梦", icon: "skills/jimeng.jpg" },
     { name: "剪映", icon: "skills/jianying.jpg" },
   ],
   projects: [
@@ -36,9 +37,10 @@ export const siteConfig = {
       skills: [],
     },
     {
-      name: "项目三",
-      description: "作品内容待补充",
-      link: "",
+      name: "山浩品牌设计重构",
+      description: "课程作品 · 以 Mountain Hardwear（山浩）为对象，从品牌定位、标志与色彩系统延伸到海报、户外装备和数字界面。",
+      link: "projects/project-03/",
+      cover: "projects/project-03/shanhao/01.png",
       skills: [],
     },
   ],

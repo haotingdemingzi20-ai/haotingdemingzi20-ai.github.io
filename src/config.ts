@@ -1,6 +1,7 @@
 export const siteConfig = {
   name: "梅尔西耶",
   title: "设计专业学生",
+  heroSubtitle: "湖北工业大学 · 设计专业 · 大三",
   description: "梅尔西耶的个人作品集网站",
   accentColor: "#1d4ed8",
   social: {
@@ -44,14 +45,6 @@ export const siteConfig = {
       title: "视觉设计师 · 人工智能漫剧制作",
       dateRange: "2025.12 - 2026.03",
       bullets: ["1", "1"],
-    },
-  ],
-  education: [
-    {
-      school: "湖北工业大学",
-      degree: "设计专业",
-      dateRange: "2024 - 至今",
-      achievements: [],
     },
   ],
 };

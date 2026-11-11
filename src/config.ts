@@ -28,14 +28,14 @@ export const siteConfig = {
       skills: [],
     },
     {
-      name: "伏小饮AIGC设计",
+      name: "Ai漫剧制作",
       description: "品牌数字人、IP 形象与 AIGC 视觉设计，涵盖 LoRA 训练、电商海报、直播间及短片分镜。",
       link: "projects/project-02/",
       cover: "projects/project-02/1.png",
       skills: [],
     },
     {
-      name: "全品《漫画学课本》视频化改编与 IP 内容延展",
+      name: "《全品》课本剧IP设计",
       description: "2026 年全品暑期实习项目，涵盖漫画改编、分镜设计、视频制作与科普内容运营。",
       link: "projects/project-01/",
       cover: "projects/project-01/1.png",
@@ -52,7 +52,7 @@ export const siteConfig = {
   experience: [
     {
       company: "全品教育",
-      title: "视觉设计师 · 制作部门 · 课本剧制作",
+      title: "视觉设计 · 制作部门 · 课本剧制作",
       dateRange: "2026.06 - 2026.09",
       bullets: [
         "基于公司提供的《漫画学课本》原作与角色资产，负责脚本改编、分镜、AI 视频生成、配音、剪辑和字幕，按带教反馈修改并提交成片。",
@@ -61,7 +61,7 @@ export const siteConfig = {
     },
     {
       company: "武汉智帧未来传媒有限公司",
-      title: "视觉设计师 · 人工智能漫剧制作",
+      title: "视觉设计 · 人工智能漫剧制作",
       dateRange: "2025.12 - 2026.02",
       bullets: [
         "负责商业漫剧的脚本策划、分镜设计和 AI 视频制作，完成 3 个商业订单和一个个人作品的制作交付。个人原创漫剧作品成功上线红果平台，累计热度突破866万。",

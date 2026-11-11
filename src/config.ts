@@ -41,13 +41,6 @@ export const siteConfig = {
       cover: "projects/project-01/1.png",
       skills: [],
     },
-    {
-      name: "长阳山蔬包装设计",
-      description: "课程项目 · 围绕日常买菜与到家配送，设计束口网袋、单餐净菜盒、手提袋和冷链配送纸箱。",
-      link: "projects/project-04/",
-      cover: "projects/project-04/1.png",
-      skills: [],
-    },
   ],
   experience: [
     {

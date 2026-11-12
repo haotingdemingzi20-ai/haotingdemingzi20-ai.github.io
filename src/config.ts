@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: "梅尔西耶",
+  name: "杨舒茜",
   title: "设计专业学生",
   heroSubtitle: "湖北工业大学 · 设计专业 · 大三",
-  description: "梅尔西耶的个人作品集网站",
+  description: "杨舒茜的个人作品集网站",
   accentColor: "#1d4ed8",
   social: {
     email: "18164022565@163.com",
@@ -10,7 +10,7 @@ export const siteConfig = {
     github: "https://github.com/haotingdemingzi20-ai",
   },
   aboutMe:
-    "你好，我是梅尔西耶，一名设计专业学生。我的创作工具包括 Figma、Photoshop、Illustrator、ChatGPT、Codex、LibTV、SD、ComfyUI、即梦和剪映。",
+    "你好，我是杨舒茜，一名设计专业学生。我的创作工具包括 Figma、Photoshop、Illustrator、ChatGPT、Codex、LibTV、SD、ComfyUI、即梦和剪映。",
   skills: [
     { name: "Figma", icon: "skills/figma.jpg" },
     { name: "Photoshop", icon: "skills/photoshop.jpg" },

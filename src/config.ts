@@ -21,10 +21,10 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: "山浩品牌设计重构",
-      description: "课程作品 · 以 Mountain Hardwear（山浩）为对象，从品牌定位、标志与色彩系统延伸到海报、户外装备和数字界面。",
-      link: "projects/project-03/",
-      cover: "projects/project-03/shanhao/01.png",
+      name: "《全品》课本剧IP设计",
+      description: "2026 年全品暑期实习项目，涵盖漫画改编、分镜设计、视频制作与科普内容运营。",
+      link: "projects/project-01/",
+      cover: "projects/project-01/1.png",
       skills: [],
     },
     {
@@ -35,10 +35,10 @@ export const siteConfig = {
       skills: [],
     },
     {
-      name: "《全品》课本剧IP设计",
-      description: "2026 年全品暑期实习项目，涵盖漫画改编、分镜设计、视频制作与科普内容运营。",
-      link: "projects/project-01/",
-      cover: "projects/project-01/1.png",
+      name: "山浩品牌设计重构",
+      description: "课程作品 · 以 Mountain Hardwear（山浩）为对象，从品牌定位、标志与色彩系统延伸到海报、户外装备和数字界面。",
+      link: "projects/project-03/",
+      cover: "projects/project-03/shanhao/01.png",
       skills: [],
     },
   ],

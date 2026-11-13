@@ -31,7 +31,7 @@ export const siteConfig = {
       name: "伏小饮AIGC视觉设计",
       description: "品牌数字人、IP 形象与 AIGC 视觉设计，涵盖 LoRA 训练、电商海报、直播间及短片分镜。",
       link: "projects/project-02/",
-      cover: "projects/project-02/1.png",
+      cover: "projects/project-02/digital-human/01.png",
       skills: [],
     },
     {

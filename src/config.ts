@@ -10,7 +10,7 @@ export const siteConfig = {
     github: "https://github.com/haotingdemingzi20-ai",
   },
   aboutMe:
-    "你好，我是杨舒茜，一名设计专业学生。我的创作工具包括 Figma、Photoshop、Illustrator、ChatGPT、Codex、LibTV、SD、ComfyUI、即梦和剪映。",
+    "有两段实习经历，可随时到岗，可以实习六个月以上。能快速熟悉新工具和制作流程，根据反馈修改并交付成片。热爱视觉设计，尤其喜欢品牌主视觉和产品海报设计，享受用构图、色彩和版式把产品卖点讲清楚的过程。",
   skills: [
     { name: "Figma", icon: "skills/figma.jpg" },
     { name: "Photoshop", icon: "skills/photoshop.jpg" },

@@ -1,4 +1,6 @@
 ---
+import { siteConfig } from "../config";
+
 const filename = "杨舒茜作品集-两段实习可实习六个月立刻到岗.pdf";
 const pdfUrl = `${import.meta.env.BASE_URL}${encodeURIComponent(filename)}`;
 ---
@@ -9,9 +11,16 @@ const pdfUrl = `${import.meta.env.BASE_URL}${encodeURIComponent(filename)}`;
   class="p-8 sm:p-12 md:px-16 md:pb-16 lg:px-24 lg:pb-24"
 >
   <div class="flex flex-wrap items-center gap-x-6 gap-y-3">
-    <h2 id="portfolio-pdf-title" class="text-2xl font-bold text-gray-900 sm:text-3xl">
-      作品集 PDF
-    </h2>
+    <div>
+      <h2 id="portfolio-pdf-title" class="text-2xl font-bold text-gray-900 sm:text-3xl">
+        作品集 PDF
+      </h2>
+      <div
+        aria-hidden="true"
+        class="w-[75px] h-[5px] mt-2 rounded-full"
+        style={`background-color: ${siteConfig.accentColor}`}
+      />
+    </div>
     <div class="flex flex-wrap items-center gap-3">
       <a
         href={`${pdfUrl}#toolbar=0&navpanes=0`}

@@ -8,34 +8,26 @@ const pdfUrl = `${import.meta.env.BASE_URL}${encodeURIComponent(filename)}`;
   aria-labelledby="portfolio-pdf-title"
   class="px-8 pb-8 sm:px-12 sm:pb-12 md:px-16 md:pb-16 lg:px-24 lg:pb-24"
 >
-  <div class="grid grid-cols-1 items-start gap-6 lg:grid-cols-12 lg:gap-16">
-    <div class="lg:col-span-4">
-      <h2 id="portfolio-pdf-title" class="text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl">
-        作品集 PDF
-      </h2>
-      <div class="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
-        <a
-          href={pdfUrl}
-          download={filename}
-          class="inline-flex items-center rounded-lg bg-gray-900 px-4 py-2.5 text-sm font-semibold text-white hover:bg-gray-700"
-        >
-          下载 PDF
-        </a>
-        <a
-          href={pdfUrl}
-          target="_blank"
-          rel="noopener"
-          class="text-sm font-semibold text-gray-700 underline underline-offset-4 hover:text-gray-900"
-        >
-          在新窗口预览
-        </a>
-      </div>
+  <div class="flex flex-wrap items-center gap-x-6 gap-y-3">
+    <h2 id="portfolio-pdf-title" class="text-2xl font-bold text-gray-900 sm:text-3xl">
+      作品集 PDF
+    </h2>
+    <div class="flex flex-wrap items-center gap-3">
+      <a
+        href={`${pdfUrl}#toolbar=0&navpanes=0`}
+        target="_blank"
+        rel="noopener"
+        class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2.5 text-sm font-semibold text-gray-900 hover:bg-gray-100"
+      >
+        预览 PDF
+      </a>
+      <a
+        href={pdfUrl}
+        download={filename}
+        class="inline-flex items-center rounded-lg bg-gray-900 px-4 py-2.5 text-sm font-semibold text-white hover:bg-gray-700"
+      >
+        下载 PDF
+      </a>
     </div>
-    <iframe
-      src={pdfUrl}
-      title="杨舒茜作品集 PDF 在线预览"
-      loading="lazy"
-      class="hidden h-[min(72vh,760px)] min-h-80 w-full rounded-lg border border-gray-200 bg-gray-50 sm:block lg:col-span-8"
-    ></iframe>
   </div>
 </section>
